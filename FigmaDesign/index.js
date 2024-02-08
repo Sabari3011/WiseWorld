@@ -17,11 +17,11 @@ let subscribeform=document.getElementById("subscribeform").addEventListener('sub
 
     if(validateinput())
 {
-    console.log("here")
-
+    // console.log("here")
+    let emailvalue= document.getElementById("email").value.trim();
     Email.send({
         SecureToken : "a6b0e67a-453d-4b1b-967d-fd98127cde1f",
-        To : 'sabarinathan3011@gmail.com',
+        To : `${emailvalue}`,
         From : "expressmail.provider@gmail.com",
         Subject : "Greetings from Wise World",
         Body : "Thank You for Subscribing! , You're now part of our community. Expect exciting updates and events in your inbox soon."
