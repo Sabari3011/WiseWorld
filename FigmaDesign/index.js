@@ -74,7 +74,7 @@ function validateinput (){
     else{
         let username = email.split("@")[0]
         let provider = email.split("@")[1].split(".")[0]
-        console.log(provider.search(/^g.+l$/))
+        // console.log(provider.search(/^g.+l$/))
         if(username.length < 6 || username.length > 30   || username.search(/[a-z]/) == -1 ){
             emailerr.textContent="Please Enter a valid Email";
         err = false
